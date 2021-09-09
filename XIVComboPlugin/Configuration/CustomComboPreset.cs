@@ -181,7 +181,7 @@ namespace XIVComboPlugin
         RedMageVerprocCombo = 1L << 53
         
         [CustomComboInfo("Jolt/Scorch replaced with Veraero/Verthunder when dualcasting", "Replaces Jolt/Scorch with Veraero/Verthunder when dualcasting.", 35, new uint[] { RDM.VerstoneX, RDM.VerfireX })]
-        RedMageVerprocComboX = 1L << 57
+        RedMageVerprocComboX = 1L << 57 
     }
 
     public class CustomComboInfoAttribute : Attribute
