@@ -1001,7 +1001,7 @@ namespace XIVComboPlugin
                     if (level < 62) return RDM.Jolt;
                     return RDM.Jolt2;
                 }
-                if (Configuration.ComboPresets.HasFlag(CustomComboPreset.RedMageVerprocComboX))
+            if (Configuration.ComboPresets.HasFlag(CustomComboPreset.RedMageVerprocComboX))
             {
                 if (actionID == RDM.VerstoneX)
                 {
