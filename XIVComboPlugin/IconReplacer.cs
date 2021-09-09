@@ -1003,16 +1003,16 @@ namespace XIVComboPlugin
                 }
             }
             
-            // Replace Jolt with Verelement when Dualcast is active
+            // Replace Jolt with Ver-element when Dualcast is active
             if (Configuration.ComboPresets.HasFlag(CustomComboPreset.RedMageVerprocComboX))
             {
                 if (actionID == RDM.Verstone)
                 {
                     if (level >= 80 && (lastMove == RDM.Verflare || lastMove == RDM.Verholy)) return RDM.Scorch;
                     UpdateBuffAddress();
-                    if (SearchBuffArray(1235)) return RDM.Verstone;
-                    UpdateBuffAddress();
                     if (SearchBuffArray(167) || SearchBuffArray(1249)) return RDM.Veraero;
+                    UpdateBuffAddress();
+                    if (SearchBuffArray(1235)) return RDM.Verstone;
                     if (level < 62) return RDM.Jolt;
                     return RDM.Jolt2;
                 }
@@ -1020,9 +1020,9 @@ namespace XIVComboPlugin
                 {
                     if (level >= 80 && (lastMove == RDM.Verflare || lastMove == RDM.Verholy)) return RDM.Scorch;
                     UpdateBuffAddress();
-                    if (SearchBuffArray(1234)) return RDM.Verfire;
-                    UpdateBuffAddress();
                     if (SearchBuffArray(167) || SearchBuffArray(1249)) return RDM.Verthunder;
+                    UpdateBuffAddress();
+                    if (SearchBuffArray(1234)) return RDM.Verfire;
                     if (level < 62) return RDM.Jolt;
                     return RDM.Jolt2;
                 }
