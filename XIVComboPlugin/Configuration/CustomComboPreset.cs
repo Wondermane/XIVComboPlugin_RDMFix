@@ -180,7 +180,7 @@ namespace XIVComboPlugin
         [CustomComboInfo("Verproc into Jolt", "Replaces Verstone/Verfire with Jolt/Scorch when no proc is available.", 35, new uint[] { RDM.Verstone, RDM.Verfire })]
         RedMageVerprocCombo = 1L << 53,
         
-        [CustomComboInfo("Jolt/Scorch replaced with Veraero/Verthunder when dualcasting", "Replaces Jolt/Scorch with Veraero/Verthunder when dualcasting.", 35, new uint[] { RDM.Verstone, RDM.Verfire })]
+        [CustomComboInfo("Jolt into Ver-element", "Replaces Jolt with Veraero/Verthunder when dualcasting.", 35, new uint[] { RDM.Verstone, RDM.Verfire })]
         RedMageVerprocComboX = 1L << 57
     }
 
